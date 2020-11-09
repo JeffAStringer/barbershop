@@ -1,0 +1,56 @@
+.parent {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 125px;
+    grid-row-gap:0px;}
+.header { grid-area: 1 / 1 / 2 / 5;}
+.content{
+        padding: 16px;
+    }
+.sticky{position: fixed;
+            top: 0;
+            width: 100%;}
+.sticky + .content{padding-top: 102px;
+    }
+.Leftheader { grid-area: 1 / 1 / 2 / 2;}
+.logo{width: 100px;
+        height: 50px;}
+.Middle-Header { grid-area: 1 / 2 / 2 / 4; }
+.Rightheader { grid-area: 1 / 4 / 2 / 5; }
+.wholebody { grid-area: 2 / 1 / 4 / 5;
+               background-image:url(../Images/barbershop.jpg);
+               height:1100px;
+               width:2000px;}
+  .leftfooter { grid-area: 4/ 1 / 5/ 2;}
+  .MLfooter { grid-area: 4/ 2 / 5/ 3;}
+  .MRfooter { grid-area: 4/ 3 / 5 / 4;}
+  .Rightfooter { grid-area: 4/ 4 / 5 / 5;}
+  p{display: flex;
+    justify-content: center;
+    font-size: 35px;
+    padding-left: 225px;
+    color: #ff6d09;
+  }
+a{color:  #ff6d09}
+.nav {
+     font-size: 50px;
+     display: flex;
+     justify-content:center;
+     margin: 20px;}
+.home {padding: 20px;}
+.about{padding: 20px;}
+.gallery{padding: 20px;}
+.contact{padding: 20px;}
+.Blog{padding: 20px;}
+.beard{width: 75px;}
+body{font-family: 'Shadows Into Light', cursive;
+    background-color: #979797;
+}
+a:hover{background-color: skyblue;}
+.parent.auto-grid {
+  --auto-grid-min-size: 16rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
+  grid-gap: 1rem;
+}

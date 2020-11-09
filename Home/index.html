@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mainpage.style.css">
+    <title>Barbershop Checkpoint</title>
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+</head>
+<body>
+ 
+    <div class="parent" class="autogrid">
+        <div class="header" id="myheader">
+                <nav class="nav">
+                    <a href="../Images/beardlogo.png"><img src="../Images/beardlogo.png" class="beard" alt=""></a>
+                    <a href="../Home/index.html"class="home">Home</a>
+                    <a href="../About/about.html"class="about">About</a>
+                    <a href="../Gallery/gallery.html"class="gallery">Gallery</a>
+                    <a href="../Contact/contact.html"class="contact">Contact</a>
+                    <a href="../Blog/blog.index.html"class="Blog">Blog</a>
+                </nav>
+        </div>
+        <div class="Leftheader"></div>
+        <div class="Middle-Header"></div>
+        <div class="Rightheader"></div>
+        <div class="wholebody"></div>
+        <div class="leftfooter"><img src=".././Images/beardrusticwithsunglasses.png" class="image"alt=""><nav><a href="../Gallery/gallery.html"</nav>
+                <p>Roughstyle</p></div>
+        <div class="MLfooter"><img src=".././Images/cleanwithsunglasses.png" class="image" alt=""><nav><a href="../Gallery/gallery.html"</nav>
+                <p>Cleancut</p></div>
+        <div class="MRfooter"><img src=".././Images/beardsmall.png" class="image" alt=""><nav><a href="../Gallery/gallery.html"</nav>
+                <p>Eurpean</p></div>
+        <div class="Rightfooter"><img src=".././Images/beardhairandsunglasses.png" class="image" id="myheader" alt=""><nav><a href="../Gallery/gallery.html"</nav>
+                <p>Super Shaggy</p>
+        <script>
+                        function myFunction() {
+                        document.getElementById("myheader").style.color = "red";
+                        }
+                        function myFunction() {
+                        document.getElementsByID("myheader").style.color = "red"
+                        }
+                        window.onscroll = function() {myFunction()};
+        
+                        const header = document.getElementById("myheader");
+                        const sticky = header.offsetTop;
+        
+                        function myFunction() {
+                        if (window.pageYOffset > sticky) {
+                        header.classList.add("sticky");
+                        } else {
+                        header.classList.remove("sticky");
+                        }
+                        }
+                        console.log();
+                        //function myFunction() {
+                        //document.getElementById("autogrid").style.color = "red";
+
+        </script>
+      </div>
+      
+</body>
+</html>
